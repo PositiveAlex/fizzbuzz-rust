@@ -1,0 +1,5 @@
+[package]
+
+name = "fizzbuzz-rust"
+version = "0.0.1"
+authors = ["Alexander Iljushkin <postivealex@gmail.com>"]
