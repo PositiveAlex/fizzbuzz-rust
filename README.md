@@ -1,2 +1,3 @@
 # fizzbuzz-rust
-fizbuzz implementation on rust
+
+The fizbuzz task implementation on rust language.
