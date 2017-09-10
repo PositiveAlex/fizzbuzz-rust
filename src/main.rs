@@ -1,19 +1,18 @@
-use std::ops::Range;
-
 fn main() {
-    println!("The fizzbuzz output:");
-    let mut output: String = "".into();
-    let range = Range { start: 1, end: 100 };
-    for num in range {
-        if num % 3 == 0 {
-            output = output + "fizz";
+    let max = 100;
+    for num in 1..max + 1 {
+        if num % 15 == 0 {
+            print!(" fizzbuzz");
         }
-        if num % 5 == 0 {
-            output = output + "buzz";
+        else if num % 3 == 0 {
+            print!(" fizz");
         }
-        if output.len() == 0 {
-            output = num.to_string();
+        else if num % 5 == 0 {
+            print!(" buzz");
         }
+        else {
+            print!(" {}", num.to_string());
+        }
+
     }
-    print!("{}", output);
 }
